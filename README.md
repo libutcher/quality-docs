@@ -1,59 +1,63 @@
 # quality-docs
 
-Independent agent skills for reviewing and improving developer documentation.
+Review developer documentation with the questions an experienced technical writer asks: Can readers find what they need, understand it, and complete their tasks?
 
-Each skill focuses on a specific kind of documentation review. Install and use only the skills you need—no orchestrator or shared configuration is required.
+**quality-docs** is a growing collection of independent agent skills informed by the editorial practices of a staff-level technical writer specializing in developer documentation. Each skill focuses on a specific aspect of documentation quality, so you can choose the review you need without adopting an entire workflow.
 
-## Available skills
+## Available now: Structural review
 
-| Skill | What it reviews | Status |
-| --- | --- | --- |
-| [Structural review](structural-review/SKILL.md) | Audience fit, organization, completeness, examples, scannability, accessibility, and plain language | Available |
+The [structural-review skill](structural-review/SKILL.md) helps you review a draft or existing developer documentation before sharing it with peers or subject matter experts.
 
-Additional independent skills may be added over time, including technical accuracy, security review, and style and voice.
+It checks whether:
 
-## Use a skill
+- The content serves its intended audience and purpose.
+- Readers can follow the information and complete the documented task.
+- Prerequisites, examples, and expected results are clear.
+- Headings, links, and instructions are easy to scan and use.
+- Language is direct, precise, and focused on what the reader can do.
 
-Each skill lives in its own directory and contains a `SKILL.md` file with the instructions and metadata for compatible coding agents.
+The skill prioritizes problems that could confuse or block developers. It suggests focused fixes, preserves the author's voice, and turns unverified technical details into questions rather than guesses.
 
-For an agent that supports the Agent Skills directory convention, copy the skill directory to the appropriate skills location. For example, for a personal Claude Code installation:
+## Install and use
+
+Copy the `structural-review` directory into your agent's skills location. For example, from a local clone of this repository, install it for personal use in Claude Code:
 
 ```bash
 mkdir -p ~/.claude/skills
 cp -R structural-review ~/.claude/skills/
 ```
 
-Run that command from the root of a local clone of this repository. For a project-local Claude Code installation, copy the folder into `.claude/skills/` in your project instead.
+To use it only in one project, copy the directory into that project's `.claude/skills/` instead.
 
-Then ask your agent to use the skill on a draft, for example:
+Then ask your agent:
 
-> Review this developer documentation draft using the structural-review skill. Focus on problems that could prevent a developer from completing the task. Don't rewrite the whole page.
+> Review this developer documentation page using the structural-review skill. Focus on what could prevent a developer from understanding the page or completing the task. Don't rewrite the whole document.
 
-Agent discovery, invocation, and directory locations vary by tool. If your agent does not discover the skill automatically, point it to the `SKILL.md` file or provide its contents as instructions.
+Skill discovery and installation paths vary by agent. If your agent doesn't recognize the skill, point it to [`structural-review/SKILL.md`](structural-review/SKILL.md). Avoid installing conflicting versions with the same skill name.
 
-**Canonical source:** `structural-review/SKILL.md` is the published skill. Avoid installing multiple different skills with the same frontmatter `name` (for example, both a project-local and personal `structural-review`); agent loading behavior may vary.
+## Review principles
 
-## Review philosophy
+The skills are designed to support, not replace, a technical writer's judgment.
 
-These skills are designed to support experienced technical writers, not replace their judgment.
+- **Start with the reader.** Evaluate the documentation against the reader's goal, not a preferred template.
+- **Find meaningful problems.** Prioritize missing steps, confusing explanations, contradictions, and misleading examples over cosmetic edits.
+- **Preserve the author's voice.** Suggest the smallest useful change.
+- **Don't invent product facts.** Identify what needs confirmation from an implementation or subject matter expert.
+- **Use standards thoughtfully.** Respect project-specific guidance; use frameworks such as [Diátaxis](https://diataxis.fr/) to inform decisions, not dictate them.
 
-- Prioritize developer success over superficial editorial polish.
-- Make specific, actionable recommendations.
-- Preserve the author's voice.
-- Distinguish verified problems from questions that need technical review.
-- Keep the skills independent, reusable, and configurable without requiring a shared workflow.
+## Try the example
 
-The structural review skill uses [Diátaxis](https://diataxis.fr/) to reason about content purpose. Project style guides take priority when supplied. External editorial references are optional aids, not requirements for every review.
+Review the intentionally flawed [webhook guide](examples/webhooks-before.md) with the structural-review skill, then compare the result with the [expected findings and evaluation rubric](examples/webhooks-expected-findings.md).
 
-## Evaluation example
+For a blind evaluation, give the agent only the skill and draft—not the answer key.
 
-The intentionally flawed [webhook draft](examples/webhooks-before.md) can be used to test the structural review skill. Compare its output with the [expected findings and manual evaluation rubric](examples/webhooks-expected-findings.md).
+## More skills
 
-For a blind test, give the agent **only the skill and draft**, not the expected-findings file. The evaluation key is intended for human comparison after the review.
+This repository currently contains **one skill**. Future independent skills may cover technical accuracy, security, and style and voice. Each will be usable on its own, without an orchestrator.
 
 ## Contributing
 
-Ideas, improvements, and reports of unhelpful or incorrect feedback are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
+Suggestions, examples, and reports of missed issues or unhelpful feedback are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
