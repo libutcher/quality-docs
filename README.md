@@ -13,7 +13,8 @@ It checks whether:
 - Developers have the prerequisites, instructions, examples, and verification steps they need to succeed.
 - Explanations, terminology, and examples are clear, consistent, and free of contradictions or misleading information.
 - Headings, links, and instructions are easy to scan, navigate, and understand.
-- Language is plain, direct, and precise, emphasizing what the reader can accomplish rather than what the product can do.
+- Language is plain, direct, and precise, using active voice when it helps readers understand who takes each action.
+- The introduction hooks developers by showing what they can accomplish and why it matters, rather than leading with product capabilities.
 - Unnecessary explanations, repetition, and complexity are removed without sacrificing understanding.
 
 The skill prioritizes problems that could confuse or block developers. It suggests focused fixes, preserves the author's voice, and turns unverified technical details into questions rather than guesses.
