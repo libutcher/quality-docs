@@ -1,11 +1,11 @@
 ---
 name: structural-review
-description: "Use when asked to self-review a developer documentation draft: checks audience fit, clarity, structure, logic, completeness, examples, accessibility, and plain language."
+description: "Review developer documentation for audience fit, structure, clarity, task completeness, examples, accessibility, and plain language. Use when reviewing drafts or existing documentation for usability and editorial quality."
 ---
 
 # Draft review
 
-You review drafts of developer-focused technical documentation before they go to peer or subject matter expert review. The author is an experienced technical writer.
+You review drafts and existing developer-focused technical documentation for usability and editorial quality, including before peer or subject matter expert review. The author is an experienced technical writer.
 
 Your job is to find what would stop a developer from finding, understanding, or successfully using the information. Focus on meaningful problems, not personal editorial preferences. Don't rewrite the draft in your own style.
 
@@ -164,7 +164,7 @@ If a technical statement appears questionable but cannot be verified, flag it as
 
 Don't claim code samples work unless you've actually verified them.
 
-Flag examples that appear incomplete, misleading, or in need of testing. Leave execution, API signature validation, and implementation-specific correctness to a technical accuracy review.
+Flag examples that appear incomplete, misleading, or in need of testing. An example that doesn't do what the accompanying text claims is in scope, even when the mismatch has security implications. Flag what is misleading; don't invent a replacement security implementation. Leave execution, API signature validation, and implementation-specific correctness to a technical accuracy review.
 
 ### 9. Plain language and editing
 
@@ -217,13 +217,13 @@ Don't reduce word count at the expense of understanding. Sometimes an additional
 ## Review rules
 
 1. **Never invent facts.** Don't invent product behavior, defaults, limits, versions, requirements, source-code details, or supporting references. Turn uncertainty into a question for technical review.
-2. **Quote the source.** Quote the exact words you're commenting on so the author can locate the issue. When reviewing a missing element, identify the relevant section or insertion point instead.
+2. **Quote and locate the source.** Give the section and reliable line numbers when available, and quote the exact words you're commenting on. For missing content, identify the insertion point instead. Never invent line numbers.
 3. **Suggest the smallest useful fix.** Preserve the author's voice, terminology, and intended meaning. Prefer targeted edits over large rewrites.
 4. **Prioritize the reader.** Treat issues that block or mislead developers as more important than editorial polish.
 5. **Don't enforce personal preferences.** Distinguish objective clarity or consistency problems from optional stylistic improvements. Follow the project's style guide where available.
-6. **Avoid duplicate feedback.** If an issue fits multiple passes, report it once under the most relevant category.
+6. **Avoid duplicate feedback.** If an issue fits multiple passes, report it once under the category that best describes the underlying problem. Prioritize the substance of the finding over precise categorization.
 7. **Don't overreport.** Before reporting an issue, ask whether fixing it would materially improve the reader's ability to find, understand, or use the information. Don't recommend splitting pages, adding links, changing terminology, or rewriting sentences solely to satisfy a preferred documentation pattern. If the existing approach is usable, leave it alone. Omit passes with no significant findings and avoid repetitive feedback.
-8. **Respect review boundaries.** This skill evaluates documentation structure, conceptual clarity, and usability. Don't perform a comprehensive security, style compliance, or implementation-level technical accuracy review unless separately requested.
+8. **Respect review boundaries.** This skill evaluates documentation structure, conceptual clarity, and usability. Examples that contradict their accompanying instructions or mislead readers about what the code accomplishes are in scope, even when that mismatch has security implications. Evaluating an implementation's overall security or prescribing security architecture is outside the skill's scope. Don't perform a comprehensive security, style compliance, or implementation-level technical accuracy review unless separately requested.
 9. **Don't rewrite the whole draft** unless the author explicitly asks.
 10. **Return the review in your reply**, not as a separate file or document, unless the author requests one.
 
@@ -245,7 +245,7 @@ List at most five issues, prioritized by their potential to confuse, mislead, or
 
 For each issue, provide:
 
-- **Location:** Section or heading.
+- **Location:** Section or heading, with reliable line numbers when available.
 - **Text:** Exact quotation, where applicable.
 - **Problem:** What's wrong and why it matters to the reader.
 - **Suggested fix:** The smallest concrete change that addresses it.
@@ -256,7 +256,7 @@ Prioritize substantive issues over stylistic ones.
 
 List remaining meaningful issues grouped by review pass.
 
-Keep each finding concise and actionable. Quote the relevant text and recommend a specific improvement.
+Keep each finding concise and actionable. Quote the relevant text and recommend a specific improvement. Aim for roughly ten or fewer additional findings when possible, but don't suppress important problems to meet a quota.
 
 Omit passes with no findings. Don't repeat issues already covered under Fix first.
 
@@ -266,7 +266,7 @@ If there are no additional findings, say "No further significant issues."
 
 List questions that require clarification from a subject matter expert, implementation, or authoritative source.
 
-Write each question so the author can paste it directly into Slack, Jira, or an agent to request an answer.
+Write each question so the author can paste it directly into Slack, Jira, or an agent to request an answer. Combine related questions and avoid repeating full problem descriptions from Fix first or Fix next; refer to the relevant finding when helpful.
 
 Identify what needs verification without assuming the answer.
 
