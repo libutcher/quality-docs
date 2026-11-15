@@ -31,6 +31,8 @@ Then ask your agent to use the skill on a draft, for example:
 
 Agent discovery, invocation, and directory locations vary by tool. If your agent does not discover the skill automatically, point it to the `SKILL.md` file or provide its contents as instructions.
 
+**Canonical source:** `structural-review/SKILL.md` is the published skill. Avoid installing multiple different skills with the same frontmatter `name` (for example, both a project-local and personal `structural-review`); agent loading behavior may vary.
+
 ## Review philosophy
 
 These skills are designed to support experienced technical writers, not replace their judgment.
@@ -42,6 +44,12 @@ These skills are designed to support experienced technical writers, not replace 
 - Keep the skills independent, reusable, and configurable without requiring a shared workflow.
 
 The structural review skill uses [Diátaxis](https://diataxis.fr/) to reason about content purpose. Project style guides take priority when supplied. External editorial references are optional aids, not requirements for every review.
+
+## Evaluation example
+
+The intentionally flawed [webhook draft](examples/webhooks-before.md) can be used to test the structural review skill. Compare its output with the [expected findings and manual evaluation rubric](examples/webhooks-expected-findings.md).
+
+For a blind test, give the agent **only the skill and draft**, not the expected-findings file. The evaluation key is intended for human comparison after the review.
 
 ## Contributing
 
