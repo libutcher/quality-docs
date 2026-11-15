@@ -8,11 +8,13 @@ The [structural-review skill](structural-review/SKILL.md) helps you review a dra
 
 It checks whether:
 
-- The content serves its intended audience and purpose.
-- Readers can follow the information and complete the documented task.
-- Prerequisites, examples, and expected results are clear.
-- Headings, links, and instructions are easy to scan and use.
-- Language is direct, precise, and focused on what the reader can do.
+- The content meets the reader's needs, matches their level of knowledge, and serves its intended purpose.
+- Information follows the reader's workflow or information-seeking path, introducing concepts and complexity when they're needed.
+- Developers have the prerequisites, instructions, examples, and verification steps they need to succeed.
+- Explanations, terminology, and examples are clear, consistent, and free of contradictions or misleading information.
+- Headings, links, and instructions are easy to scan, navigate, and understand.
+- Language is plain, direct, and precise, emphasizing what the reader can accomplish rather than what the product can do.
+- Unnecessary explanations, repetition, and complexity are removed without sacrificing understanding.
 
 The skill prioritizes problems that could confuse or block developers. It suggests focused fixes, preserves the author's voice, and turns unverified technical details into questions rather than guesses.
 
