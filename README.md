@@ -1,10 +1,12 @@
 # quality-docs
 
-**quality-docs** is a growing collection of independent agent skills informed by the editorial practices of a staff-level technical writer specializing in developer documentation. Each skill focuses on a specific aspect of documentation quality, so you can choose the review you need without adopting an entire workflow.
+Find the issues that keep developers from succeeding with your documentation, from missing steps to confusing explanations and misleading examples.
+
+**quality-docs** is a growing collection of independent agent skills informed by the editorial practices of a staff-level technical writer specializing in developer documentation. Use each skill on its own to get focused feedback without adopting an entire workflow.
 
 ## Available now: Structural review
 
-The [structural-review skill](structural-review/SKILL.md) helps you review a draft or existing developer documentation before sharing it with peers or subject matter experts.
+Use the [structural-review skill](structural-review/SKILL.md) to review drafts before peer or subject matter expert review, or to improve existing documentation.
 
 It checks whether:
 
@@ -14,7 +16,7 @@ It checks whether:
 - Explanations, terminology, and examples are clear, consistent, and free of contradictions or misleading information.
 - Headings, links, and instructions are easy to scan, navigate, and understand.
 - Language is plain, direct, and precise, using active voice when it helps readers understand who takes each action.
-- The introduction hooks developers by showing what they can accomplish and why it matters, rather than leading with product capabilities.
+- Task-oriented introductions show developers what they can accomplish and why it matters, rather than leading with product capabilities.
 - Unnecessary explanations, repetition, and complexity are removed without sacrificing understanding.
 
 The skill prioritizes problems that could confuse or block developers. It suggests focused fixes, preserves the author's voice, and turns unverified technical details into questions rather than guesses.
@@ -48,7 +50,7 @@ The skills are designed to support, not replace, a technical writer's judgment.
 
 ## Try the example
 
-Review the intentionally flawed [webhook guide](examples/webhooks-before.md) with the structural-review skill, then compare the result with the [expected findings and evaluation rubric](examples/webhooks-expected-findings.md). 
+Review the intentionally flawed [webhook guide](examples/webhooks-before.md) using the structural-review skill. Give your agent only the skill and draft; then compare its feedback with the [expected findings and evaluation rubric](examples/webhooks-expected-findings.md).
 
 ## More skills
 
