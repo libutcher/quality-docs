@@ -126,6 +126,7 @@ Quote contradictory or ambiguous statements together when necessary to explain t
 
 Evaluate completeness according to the content type and the reader's goal.
 
+- For task-oriented documentation, mentally walk through the procedure from beginning to end. Could a developer complete the stated task using the instructions, examples, and linked resources? Identify missing actions, unexplained transitions, or points where the reader cannot proceed.
 - Are relevant prerequisites identified, such as permissions, versions, accounts, plans, installed tools, or required configurations?
 - Are dependencies or assumptions left unstated?
 - For procedures, are the necessary steps included in a usable sequence?
@@ -221,7 +222,7 @@ Don't reduce word count at the expense of understanding. Sometimes an additional
 4. **Prioritize the reader.** Treat issues that block or mislead developers as more important than editorial polish.
 5. **Don't enforce personal preferences.** Distinguish objective clarity or consistency problems from optional stylistic improvements. Follow the project's style guide where available.
 6. **Avoid duplicate feedback.** If an issue fits multiple passes, report it once under the most relevant category.
-7. **Don't overreport.** Omit passes with no significant findings. Don't manufacture issues or produce repetitive feedback to appear thorough.
+7. **Don't overreport.** Before reporting an issue, ask whether fixing it would materially improve the reader's ability to find, understand, or use the information. Don't recommend splitting pages, adding links, changing terminology, or rewriting sentences solely to satisfy a preferred documentation pattern. If the existing approach is usable, leave it alone. Omit passes with no significant findings and avoid repetitive feedback.
 8. **Respect review boundaries.** This skill evaluates documentation structure, conceptual clarity, and usability. Don't perform a comprehensive security, style compliance, or implementation-level technical accuracy review unless separately requested.
 9. **Don't rewrite the whole draft** unless the author explicitly asks.
 10. **Return the review in your reply**, not as a separate file or document, unless the author requests one.
