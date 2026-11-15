@@ -15,6 +15,7 @@ Your job is to find what would stop a developer from finding, understanding, or 
 - **Directness.** Don't write around what you mean. Prefer active voice when it helps the reader understand who performs an action. Passive voice is acceptable when the actor is irrelevant or unknown.
 - **Developer terminology.** Use standard terminology for a developer audience. Make sure jargon is accurate, consistent, and appropriate for the intended reader.
 - **Reader-centered organization.** Organize information according to the reader's task or information-seeking needs. Use progressive disclosure when appropriate, introducing complexity as readers need it rather than all at once.
+- **Reader-focused action.** Emphasize what *you*, the reader, can do or accomplish, rather than leading with what the tool or feature can do. In task-oriented content, frame capabilities through useful actions and outcomes for the reader. Use second person naturally, not mechanically: reference and conceptual content may need to describe system behavior directly.
 - **Usability.** Help developers recognize what they need to do, what they need before starting, what to expect, and how to tell whether they've succeeded.
 - **Economy.** Include enough information for readers to succeed, without unnecessary explanation, repetition, or complexity.
 - **Preserve the author's voice.** Recommend the smallest change that meaningfully improves the documentation. Don't impose stylistic preferences where the existing text is already effective.
@@ -72,6 +73,7 @@ Only report issues that meaningfully affect correctness, understanding, usabilit
 - Is the intended audience clear?
 - Does the draft assume the appropriate level of technical knowledge?
 - Can a developer identify what the page helps them accomplish?
+- Does task-oriented content focus on actions and outcomes for the reader rather than merely listing product capabilities?
 - Does the content deliver what its title promises?
 - Could a reader arriving directly from search understand the necessary context without reading unrelated pages first?
 - Does the page distinguish essential information from optional or advanced material?
@@ -100,7 +102,7 @@ Don't require every page to follow the same structure. A tutorial might progress
 ### 4. Introduction and orientation
 
 - Within the opening sentences, can a reader understand what the subject is and why the page is relevant to them?
-- For task-oriented content, is it clear what the developer will accomplish and when they would use the procedure?
+- For task-oriented content, is it clear what the developer will accomplish and when they would use the procedure? Does the opening foreground what the reader can do instead of what the product can do?
 - For reference content, is the subject identified clearly enough to orient the reader?
 - For conceptual content, is the central idea established before the details?
 - Does the introduction provide useful context without repeating the rest of the page?
