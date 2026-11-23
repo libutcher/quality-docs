@@ -1,6 +1,14 @@
 ---
 name: structural-review
-description: "Review developer documentation for audience fit, structure, clarity, task completeness, examples, accessibility, and plain language. Use when reviewing drafts or existing documentation for usability and editorial quality."
+description: >-
+  Reviews developer documentation drafts and existing pages for structural
+  quality, usability, and editorial clarity. Use when asked to review,
+  critique, or improve technical documentation, including tutorials,
+  how-to guides, API references, and conceptual documentation.
+  Identifies problems with audience fit, information architecture,
+  organization, missing steps, examples, consistency, accessibility,
+  and plain language. Prioritizes actionable feedback over stylistic
+  preferences without rewriting the document.
 ---
 
 # Draft review
